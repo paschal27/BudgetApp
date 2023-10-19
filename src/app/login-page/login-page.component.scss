@@ -1,0 +1,67 @@
+
+.section {
+    display: flex;
+    padding: 50px;
+
+    // Horizontally and vertically center flex children
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        display: flex;
+        max-width: 1080px;
+        height: 100%;
+        width: 100%;
+
+        .design-column, .login-column {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 0;
+            flex-grow: 1;
+        }
+
+        .design-column {
+            margin-right: 35px;
+
+        }
+
+        .login-column {
+            .card {
+                display: flex;
+                justify-content: center;
+                // align-items: center;
+                height: 643px;
+                width: 510px;
+                background: white;
+            }
+            
+            .form-control {
+                margin-top: 30px;
+                border-style: solid;
+                border-color: black;
+            }
+
+            .forms {
+                margin-top: 190px;
+            }
+
+            #login {
+                margin-left: 170px;
+                width: 150px;
+                background: linear-gradient(75deg, rgb(214, 180, 247), rgb(173, 203, 231));
+                color: black;
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: 5000;
+                font-size: medium;
+            }
+            .signin {
+                display: flex;
+                position: absolute;
+                margin-top: 170px;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: medium;
+            }
+        }
+
+    }
+}

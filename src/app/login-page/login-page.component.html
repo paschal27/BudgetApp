@@ -1,0 +1,32 @@
+<section class="section">
+    <div class="container">
+
+        <div class="design-column">
+        </div>
+
+        <div class="login-column">
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title" style="text-align: center; font-size: x-large; font-family: 'Times New Roman', Times, serif; "><strong>LOGIN</strong></h5>
+                  <div class="forms">
+                  <form [formGroup]="loginForm" id="form1">
+                    <!-- Email input -->
+                    <div class="form-outline">
+                      <input required type="email"  class="form-control" formControlName="email" placeholder="Email Address"/>
+                    </div>
+                 
+                    <!-- Password input -->
+                    <div class="form-outline">
+                      <input required type="password" id="pInput" class="form-control" formControlName="password" placeholder="Password" />
+                    </div>
+                    <button id="login" type="submit" class="btn btn-outline-secondary mt-4" [disabled]="!loginForm.valid" (click)="onSubmit(loginForm.value)" routerLink="/home" ><strong>LOGIN</strong></button>
+                    </form>
+                </div>
+                <div class="signin">
+                    <strong><p>Don't have an account? <span><a href="/home">Sign Up</a></span></p></strong>
+                </div>
+                </div>
+              </div>
+    </div>
+    </div>
+</section>

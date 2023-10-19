@@ -1,0 +1,15 @@
+<div class="top-bar">
+    <h1>Your Budget Calculator</h1>
+</div>
+
+<section class="total-budget">
+    <h2 class="green">5000</h2>
+</section>
+
+<section class="add-item">
+    <div class="add-item-container">
+        <app-add-item style="padding: 20px;" (formSubmit)="addItem($event)"></app-add-item>
+    </div>
+</section>
+<hr style="margin-top: 0; background-color: grey;">
+<app-item-list [budgetItems]="budgetItems" (deleteVal)="deleteItem($event)"></app-item-list>
