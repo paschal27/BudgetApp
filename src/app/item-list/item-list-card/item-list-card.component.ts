@@ -10,9 +10,14 @@ export class ItemListCardComponent {
 
   @Input() item: BudgetItem | undefined
   @Output() deleteItem: EventEmitter<any> = new EventEmitter<any>
+  @Output() cardClick: EventEmitter<any> = new EventEmitter<any>
 
   deleteEmitter() {
     this.deleteItem.emit()
+  }
+
+  onCardClick() {
+    this.cardClick.emit()
   }
 
 }

@@ -9,6 +9,8 @@ import { ItemListComponent } from './item-list/item-list.component';
 import { ItemListCardComponent } from './item-list/item-list-card/item-list-card.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginPageComponent } from './login-page/login-page.component';
+import { EditItemModalComponent } from './edit-item-modal/edit-item-modal.component';
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -17,15 +19,18 @@ import { LoginPageComponent } from './login-page/login-page.component';
     AddItemComponent,
     ItemListComponent,
     ItemListCardComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    EditItemModalComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatDialogModule
   ],
   providers: [],
+  // entryComponents: [EditItemModalComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -3,5 +3,7 @@
 @import 'main-styles';
 @import '../node_modules/bulma/bulma.sass';
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background: linear-gradient(75deg, rgb(214, 180, 247), rgb(173, 203, 231));}
+// html, body { height: 100%; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background: linear-gradient(75deg, rgb(214, 180, 247), rgb(173, 203, 231));}
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
