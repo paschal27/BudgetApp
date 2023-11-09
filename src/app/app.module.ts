@@ -9,6 +9,8 @@ import { ItemListComponent } from './item-list/item-list.component';
 import { ItemListCardComponent } from './item-list/item-list-card/item-list-card.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginPageComponent } from './login-page/login-page.component';
+import { SignupComponent } from './signup/signup.component';
+import {HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -17,13 +19,15 @@ import { LoginPageComponent } from './login-page/login-page.component';
     AddItemComponent,
     ItemListComponent,
     ItemListCardComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,8 @@
 
+.body {
+    height: 100vh;
+     background: linear-gradient(75deg, rgb(214, 180, 247), rgb(173, 203, 231));
+}
 .section {
     display: flex;
     padding: 50px;
@@ -26,41 +30,45 @@
         }
 
         .login-column {
+            display: flex;
+
             .card {
-                display: flex;
-                justify-content: center;
                 // align-items: center;
+                display: flex;
                 height: 643px;
-                width: 510px;
+                width: 100%;
                 background: white;
+
+                .form-control {
+                    margin-top: 30px;
+                    border-style: solid;
+                    border-color: black;
+                }
+    
+                .forms {
+                    margin-top: 190px;
+                }
+    
+                #login {
+                    margin-left: 170px;
+                    width: 150px;
+                    background: linear-gradient(75deg, rgb(214, 180, 247), rgb(173, 203, 231));
+                    color: black;
+                    font-family: 'Courier New', Courier, monospace;
+                    font-weight: 5000;
+                    font-size: medium;
+                }
+                .signin {
+                    display: flex;
+                    position: absolute;
+                    margin-top: 170px;
+                    font-family: 'Courier New', Courier, monospace;
+                    font-size: medium;
+                }
+
             }
             
-            .form-control {
-                margin-top: 30px;
-                border-style: solid;
-                border-color: black;
-            }
-
-            .forms {
-                margin-top: 190px;
-            }
-
-            #login {
-                margin-left: 170px;
-                width: 150px;
-                background: linear-gradient(75deg, rgb(214, 180, 247), rgb(173, 203, 231));
-                color: black;
-                font-family: 'Courier New', Courier, monospace;
-                font-weight: 5000;
-                font-size: medium;
-            }
-            .signin {
-                display: flex;
-                position: absolute;
-                margin-top: 170px;
-                font-family: 'Courier New', Courier, monospace;
-                font-size: medium;
-            }
+            
         }
 
     }
